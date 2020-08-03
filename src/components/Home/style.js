@@ -1,12 +1,14 @@
 import {makeStyles} from '@material-ui/core/styles';
-import vector from '../img/Group 1.svg';
+
 
 export const useStyles = makeStyles((theme)=>({
     imageContainer:{
       
         
         // textAlign:"center",
-        background:"#F5A05C",
+        // background:"#E5E5E5",
+        background: "rgb(238,174,202)",
+        background: "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",
         minHeight:"100vh",
         // height: "100vh",
         color:"Black",
@@ -20,9 +22,7 @@ export const useStyles = makeStyles((theme)=>({
         //  alignItems: "center",
          
     },
-    photoBg:{
-      
-    },
+    
     heroImage:{
         maxHeight:"800px",
         width:"100%",
@@ -31,14 +31,35 @@ export const useStyles = makeStyles((theme)=>({
 
     },
     heroContent:{
-      background: "yellow",
+      // background: "yellow",
+      textAlign: "center",
+      fontSize: "24px",
+     
       maxHeight:"800px",
       width:"100%",
     },
+    transition:{
+      position: "relative",
+    },
     photo:{
-      width: "420px",
-      height: "420px",
-      marginTop: 80
+      position: "relative",
+      transition: "ease-in-out 300ms" ,
+      width: "320px",
+      height: "320px",
+      zIndex: 1,
+      '&:hover': {
+        
+        transform: "rotate(-6deg)"
+      }
+   
+    },
+    photoBg:{
+      position: "absolute",
+      background: "#021718",
+      width: "320px",
+      height: "320px",
+      top: 0,
+      left: 0
     },
     heroText: {
         position: 'absolute',
@@ -49,6 +70,7 @@ export const useStyles = makeStyles((theme)=>({
       container: {
         textAlign: 'center',
         marginTop: 50,
+        
        
       },
       link: {
@@ -65,17 +87,26 @@ export const useStyles = makeStyles((theme)=>({
         margin: "0 100px"
 
       },
+    
       h3:{
         marginBottom: 20,
-        fontFamily:"'Poppins', sans-serif",
-        fontWeight:900
+        fontFamily: "'Montserrat', sans-serif",
+        fontWeight:600
       },
       paragraph:{
         fontFamily:"'Poppins', sans-serif",
         fontWeight:600
       },
+      name:{
+        fontFamily: "'Montserrat', sans-serif",
+        fontWeight: 900
+      },
+      describe:{
+        fontFamily:"'Poppins', sans-serif",
+      
+      },
       heroImage:{
-        position: "relative",
+       marginBottom:50
         
       },
       heroImageP:{

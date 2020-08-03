@@ -1,11 +1,13 @@
 import React,{createContext,useState,useEffect} from 'react';
-import firebase from "firebase";
+import firebase from 'firebase/app';
+import 'firebase/database'; 
+ 
 
 
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCXkQwxHZZ-cVREALCZOUqkSP_iv2aDmuc",
+
     authDomain: "portfolio-img.firebaseapp.com",
     databaseURL: "https://portfolio-img.firebaseio.com",
     projectId: "portfolio-img",

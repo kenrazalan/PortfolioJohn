@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -23,6 +24,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+
 import {useStyles} from './styles';
 
 
@@ -41,7 +43,7 @@ import {useStyles} from './styles';
       text: 'About'
     },
     {
-      path: '/career',
+      path: '/projects',
       icon: <WorkIcon />,
       text: 'Works'
     },
@@ -75,12 +77,15 @@ function Navbar() {
       <div>
     <AppBar position="static" className={classes.bar}>
         <Toolbar>
+          
           <Typography variant="h6" className={classes.title}>
+            <Link to="/" className={classes.linkTitle}>
             CASAS
+            </Link>
           </Typography>
           <div className={classes.navigationItems}>
               {navigationItems.map((item,key)=>(
-                  <Button className={classes.buttons} color="inherit" key={key}>{item.text}</Button>
+                  <Button to={item.path} component={Link} key={key} className={classes.buttons} color="inherit" key={key}>{item.text}</Button>
              ) )}
           </div>
           <IconButton
@@ -107,12 +112,12 @@ function Navbar() {
         >
           <List>
             {navigationItems.map((item, i) => (
-              
+              <Link to={item.path} key={i}>
                 <ListItem button>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItem>
-             
+             </Link>
             ))}
           </List>
         </div>

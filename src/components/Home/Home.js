@@ -1,8 +1,7 @@
 import React,{useContext} from 'react';
-
+import { Link } from 'react-router-dom'
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import house from '../img/house.jpg';
 import {PortfolioButton} from '../portfolio-button/portfolio-button';
 import { Carousel } from 'react-responsive-carousel';
 
@@ -26,23 +25,27 @@ function Home() {
       </div>
     ))
   return (
-    <div >
+    <div>
         
       
-      <Grid container spacing={3} justify="center" alignItems="center" className={classes.imageContainer}>
+      <Grid container spacing={3} direction="column"  alignItems="center" justify="center" className={classes.imageContainer}>
   
 
          <Grid item xs={12} sm={6} className={classes.heroContent}>
-        <Typography>Hi, I'm John Christian</Typography>
-        <p>
+        <h1 className={classes.name}>Hi, I'm John Christian</h1>
+        <h3 className={classes.describe}>
             I design beautiful websites & mobile apps that modern trends demand
-        </p>
-        <a href="#">Contact Me</a>
+        </h3>
+        <Link className={classes.link} to="/contact">
+        <PortfolioButton>Contact Me</PortfolioButton>
+        </Link>
           </Grid>
 
           <Grid item xs={12} sm={6} className={classes.heroImage}>
+          <div className={classes.transition}>
           <img  className={classes.photo} src={pic}/>
           <div className={classes.photoBg}></div>
+          </div>
          </Grid>
 
       </Grid>
@@ -52,12 +55,12 @@ function Home() {
         <Typography className={classes.paragraph} paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </Typography>
-        
+        <Link className={classes.link} >
           <PortfolioButton>Read More</PortfolioButton>
-       
+        </Link>
       </Container>
       <Container className={classes.container }>
-      <Typography className={classes.h3}variant="h3">Projects</Typography>
+      <Typography className={classes.h3}variant="h3">My Works</Typography>
             <Carousel >
               
               {img}
@@ -74,6 +77,9 @@ function Home() {
                     <p className="legend">Legend 3</p>
                 </div> */}
             </Carousel>
+            <Link className={classes.link} to="/projects">
+            <PortfolioButton>View Works</PortfolioButton>
+            </Link>
     </Container>
       <Container className={classes.container}>
         <Typography className={classes.h3} variant="h3">Contact</Typography>
@@ -82,10 +88,10 @@ function Home() {
           media platforms or contact me directly through the website contact
           message functionality. I will get back to you as soon as possible.
         </Typography>
-        
+        <Link className={classes.link} to="/contact">
           <PortfolioButton>Contact Me</PortfolioButton>
-        
-      </Container>
+        </Link>
+        </Container>
 
     </div>
   );

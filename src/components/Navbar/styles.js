@@ -17,6 +17,10 @@ export const useStyles = makeStyles((theme) => ({
       
       
     },
+    linkTitle:{
+      color: 'white',
+      textDecoration: 'none'
+    },
     menuButton: {
       marginRight: theme.spacing(2),
   

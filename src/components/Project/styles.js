@@ -5,26 +5,26 @@ export const useStyles = makeStyles((theme)=>({
         maxWidth: 545,
         
         height:"80vh",
-        marginLeft: "auto",
-        marginRight: "auto",
-        marginTop: "auto",
-        marginBottom: "auto"
+        margin: "auto"
     },
    
     media:{
         minHeight:"80%",
-        margin: "auto"
+        margin: "auto",
+        width:"100%"
             },
    
     gridc:{
         
-        margin: "auto",width:"35%",
+        margin: "auto",
+        width:"35%",
     },
     title:{
         textAlign: "center",
-        fontFamily: "'Roboto', sans-serif",
-      fontWeight: "bold",
-      margin:"40px 0"
+        fontFamily: "'Montserrat', sans-serif",
+      fontWeight: "600",
+      margin:"40px 0",
+      marginBottom: 20
     },description:{
         textAlign: "center",
         fontWeight: "bold"

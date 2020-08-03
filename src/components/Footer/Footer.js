@@ -34,7 +34,7 @@ function Footer() {
       </a>
     </Container>
 
-    <Typography>johnchristiancasas@gmail.com</Typography>
+    <Typography>johnchristian1899@gmail.com</Typography>
     <Typography>&copy; 2020 John Christian Casas</Typography>
   </div>
   );
