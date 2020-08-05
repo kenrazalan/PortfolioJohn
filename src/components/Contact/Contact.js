@@ -6,6 +6,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import axios from 'axios';
 import { useStyles } from './styles';
+import { ValidatorForm, TextValidator} from 'react-material-ui-form-validator';
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -44,11 +45,12 @@ function Contact() {
   
 
   return (
-    <form className={classes.root}>
+    <ValidatorForm onSubmit={handleSubmit} className={classes.root}>
       <Grid container direction="column" justify="center" className={classes.FormControl}>
         <h1 > CONTACT</h1>
         <Grid item className={classes.formItem}>
           <TextField
+        
             id="name"
             label="Name"
             variant="outlined"
@@ -58,11 +60,13 @@ function Contact() {
           />
         </Grid>
         <Grid item className={classes.formItem}>
-          <TextField
+          <TextValidator
             id="email"
             label="Email"
             variant="outlined"
             fullWidth
+            validators={['required', 'isEmail']}
+            errorMessages={['This field is required', 'Email is not valid']}
             required
             value={email}
             onChange={e => setEmail(e.target.value)}
@@ -81,7 +85,7 @@ function Contact() {
           />
         </Grid>
         <Grid item style={{ textAlign: 'center' }} className={classes.formItem}>
-           <PortfolioButton type="submit" onClick={handleSubmit}>
+           <PortfolioButton type="submit" >
               Submit
             </PortfolioButton>
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
@@ -92,7 +96,7 @@ function Contact() {
             
         </Grid>
       </Grid>
-    </form>
+    </ValidatorForm>
   );
 }
 
