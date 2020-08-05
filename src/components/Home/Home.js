@@ -20,7 +20,7 @@ function Home() {
     const img = data.slice(1).map(li=>(
       <div className={classes.carousel}>
         
-      <img src={li.image} />
+      <img className={classes.caImage} src={li.image} />
       <p className={li.title}>Legend 1</p>
       </div>
     ))

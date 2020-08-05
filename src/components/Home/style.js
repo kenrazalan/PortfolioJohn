@@ -87,6 +87,9 @@ export const useStyles = makeStyles((theme)=>({
         margin: "0 100px"
 
       },
+      caImage:{
+        
+      },
     
       h3:{
         marginBottom: 20,

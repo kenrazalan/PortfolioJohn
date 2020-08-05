@@ -113,7 +113,7 @@ function Navbar() {
         >
           <List>
             {navigationItems.map((item, i) => (
-              <Link to={item.path} key={i}>
+              <Link className={classes.link} to={item.path} key={i}>
                 <ListItem button>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
