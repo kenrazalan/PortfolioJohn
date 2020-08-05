@@ -17,6 +17,9 @@ export const useStyles = makeStyles((theme) => ({
       
       
     },
+    logo:{
+      maxWidth: 160,
+    },
     linkTitle:{
       color: 'white',
       textDecoration: 'none'

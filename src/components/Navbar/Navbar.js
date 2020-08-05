@@ -24,7 +24,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-
+import logo from '../img/My LOGO.png'
 import {useStyles} from './styles';
 
 
@@ -77,10 +77,11 @@ function Navbar() {
       <div>
     <AppBar position="static" className={classes.bar}>
         <Toolbar>
+        
           
           <Typography variant="h6" className={classes.title}>
             <Link to="/" className={classes.linkTitle}>
-            CASAS
+            <img className={classes.logo} src={logo}/>
             </Link>
           </Typography>
           <div className={classes.navigationItems}>
