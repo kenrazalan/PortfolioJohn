@@ -54,13 +54,20 @@ export const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.up('sm')]: {
         display: 'none'
       }
-    },buttons:{
+    },
+   
+    buttons:{
       fontFamily:"'Poppins', sans-serif",
       fontWeight: "900",
       fontSize: 20,
       textTransform: "lowercase",
       margin: "auto 15px"
       
+    },
+    buttons:{
+      [theme.breakpoints.up('sm')]:{
+        margin:'auto 10px'
+      }
     }
   
     

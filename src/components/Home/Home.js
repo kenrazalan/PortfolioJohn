@@ -10,11 +10,22 @@ import {ThemeContext} from '../../context/DataProvider';
 import { useStyles } from './style'
 import { Grid } from '@material-ui/core';
 import pic from '../img/pic.jpg';
-
+import SimpleImageSlider from "react-simple-image-slider";
 
 
 function Home() {
   const data = useContext(ThemeContext);
+    // const img = data.slice(1);
+
+    // const img2 = img.map(li=>(
+    //   li.image
+    // ))
+
+
+
+
+
+
 
     const classes = useStyles();
     const img = data.slice(1).map(li=>(
@@ -77,6 +88,13 @@ function Home() {
                     <p className="legend">Legend 3</p>
                 </div> */}
             </Carousel>
+              
+            {/* <SimpleImageSlider
+                    
+                    width={896}
+                    height={504}
+                    images={newImg}
+                /> */}
             <Link className={classes.link} to="/projects">
             <PortfolioButton>View Works</PortfolioButton>
             </Link>

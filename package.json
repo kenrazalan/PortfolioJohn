@@ -18,10 +18,12 @@
     "react-dom": "^16.13.1",
     "react-image-viewer-zoom": "^1.0.36",
     "react-material-ui-form-validator": "^2.1.1",
+    "react-modal-image": "^2.5.0",
     "react-responsive-carousel": "^3.2.9",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-simple-image-slider": "^1.0.4",
     "yup": "^0.29.2"
   },
   "scripts": {

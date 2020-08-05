@@ -1,12 +1,12 @@
 import {makeStyles} from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme)=>({
-    root:{
-        maxWidth: 545,
+    // root:{
+    //     maxWidth: 545,
         
-        height:"80vh",
-        margin: "auto"
-    },
+    //     height:"80vh",
+    //     margin: "auto"
+    // },
    
     media:{
         minHeight:"80%",
@@ -25,9 +25,15 @@ export const useStyles = makeStyles((theme)=>({
       fontWeight: "600",
       margin:"40px 0",
       marginBottom: 20
-    },description:{
+    },
+    h3:{
         textAlign: "center",
-        fontWeight: "bold"
+           fontWeight: "bold",
+           fontFamily: "'Montserrat', sans-serif",
     }
+    // ,description:{
+    //     textAlign: "center",
+    //     fontWeight: "bold"
+    // }
 
 }))

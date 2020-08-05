@@ -101,7 +101,7 @@ function Navbar() {
       </AppBar>
     
     <Drawer
-        anchor="top"
+        anchor="right"
         open={state.drawerOpen}
         onClose={toggleDrawer(false)}
       >
