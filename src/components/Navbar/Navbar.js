@@ -35,7 +35,7 @@ import {useStyles} from './styles';
     {
       path: '/',
       icon: <HomeIcon />,
-      text: 'Home'
+      text: 'home'
     },
     {
       path: '/about',
@@ -101,7 +101,7 @@ function Navbar() {
       </AppBar>
     
     <Drawer
-        anchor="right"
+        anchor="top"
         open={state.drawerOpen}
         onClose={toggleDrawer(false)}
       >

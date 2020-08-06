@@ -5,13 +5,24 @@ imageContainer:{
 
     background: "rgb(238,174,202)",
     background: "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",
-    minHeight:"100vh",
+    minHeight:"172vh",
 
     color:"Black",
 
      margin: "auto",
 
      maxWidth: "100%",
+
+     [theme.breakpoints.up('md')]:{
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      maxWidth: "100%",
+    
+
+
+},
   
      
 },
@@ -23,9 +34,19 @@ heroContent:{
  
   maxHeight:"800px",
   width:"100%",
+
+  [theme.breakpoints.up('md')]:{
+    textAlign: "right",
+   
+  }
 },
 transition:{
   position: "relative",
+
+  [theme.breakpoints.up('md')]:{
+    display: 'flex',
+    marginLeft:"120px"
+  }
 },
 photo:{
   position: "relative",

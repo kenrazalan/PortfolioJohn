@@ -21,25 +21,47 @@ export const useStyles = makeStyles((theme)=>({
         //  display: "flex",
         //  alignItems: "center",
          
+
+
+        [theme.breakpoints.up('md')]:{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "center",
+              maxWidth: "100%",
+            
+
+
     },
-    
+  },
     heroImage:{
         maxHeight:"800px",
         width:"100%",
-        background: "gray"
-        
+        background: "gray",
+      
 
     },
     heroContent:{
       // background: "yellow",
       textAlign: "center",
       fontSize: "24px",
-     
+      
       maxHeight:"800px",
       width:"100%",
+
+      [theme.breakpoints.up('md')]:{
+        textAlign: "right",
+       
+      }
     },
     transition:{
       position: "relative",
+      
+      [theme.breakpoints.up('md')]:{
+        display: 'flex',
+        marginLeft:"120px"
+      }
+      
     },
     photo:{
       position: "relative",
@@ -50,7 +72,8 @@ export const useStyles = makeStyles((theme)=>({
       '&:hover': {
         
         transform: "rotate(-6deg)"
-      }
+      },
+      
    
     },
     photoBg:{

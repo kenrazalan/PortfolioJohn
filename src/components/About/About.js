@@ -19,7 +19,7 @@ import pic from '../img/pic.jpg';
       <Grid item xs={12} sm={6} className={classes.heroContent}>
         <h1 className={classes.name}>Hi, I'm John Christian</h1>
         <h3 className={classes.describe}>
-          I design beautiful websites & mobile apps that modern trends demand
+          I Edit Photos & design Logo using Photoshop based on your demand.
         </h3>
         <Link className={classes.link} to="/contact">
           <PortfolioButton>Contact Me</PortfolioButton>
@@ -35,7 +35,8 @@ import pic from '../img/pic.jpg';
       <Container className={classes.contain}>
       <Typography className={classes.h3} variant="h3">About Me</Typography>
         <Typography className={classes.paragraph} paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Hello I am John Christian Casas. I am graduated from Batangas State University.
+        I Edit Photo and Design Logo using Photoshop based on what you needs. I am detail oriented person who pays attention to every small details a can make a conscious effort in every task.  
         </Typography>
         </Container>
     </Grid>

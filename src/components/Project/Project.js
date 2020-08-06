@@ -3,6 +3,7 @@ import { ThemeContext } from "../../context/DataProvider";
 import Card from "@material-ui/core/Card";
 import ModalImage from 'react-modal-image';
 
+
 import {
   CardMedia,
   Typography,
@@ -28,13 +29,24 @@ function Project() {
 
 
   
-  const t = data.slice(1).map((li,i) => (
+  const t = data.slice(1).map((li, i) => (
     <Grid item spacing={3} xs={12} sm={6} className={classes.gridc}>
       {/* <Card className={classes.root}> */}
-        <ModalImage  small={li.image}
-  large={li.image} className={classes.media} image={li.image} />
-  <h3 className={classes.h3}>{li.title}</h3>
-        {/* <CardContent>
+      <ModalImage
+        small={li.image}
+        large={li.image}
+        className={classes.media}
+        image={li.image}
+        hideZoom="true"
+        hideDownload="true"
+      />
+      
+
+      
+
+
+      <h3 className={classes.h3}>{li.title}</h3>
+      {/* <CardContent>
           <Typography
             className={classes.description}
             variant="body2"
@@ -46,11 +58,6 @@ function Project() {
           </Typography>
         </CardContent> */}
       {/* </Card> */}
-     
-
-    
-
-
     </Grid>
   ));
 
