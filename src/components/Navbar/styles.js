@@ -6,7 +6,11 @@ export const useStyles = makeStyles((theme) => ({
     },
     bar: {
       background: '#021718',
-      height: 70
+      height: 70,
+      [theme.breakpoints.up('md')]: {
+        height: 100,
+      }
+
     },
     title: {
       flexGrow: 1,
@@ -64,7 +68,11 @@ export const useStyles = makeStyles((theme) => ({
       margin: "auto 15px",
       [theme.breakpoints.down('md')]:{
         margin:'auto 5px'
-      }
+      },
+
+      [theme.breakpoints.up('md')]:{
+        fontSize: 25,
+      },  
       
     }
     // buttons:{

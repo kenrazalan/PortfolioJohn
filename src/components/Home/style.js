@@ -59,7 +59,8 @@ export const useStyles = makeStyles((theme)=>({
       
       [theme.breakpoints.up('md')]:{
         display: 'flex',
-        marginLeft:"120px"
+        marginLeft:"120px",
+        
       }
       
     },
@@ -74,6 +75,11 @@ export const useStyles = makeStyles((theme)=>({
         transform: "rotate(-6deg)"
       },
       
+      [theme.breakpoints.up('lg')]:{
+        width: "420px",
+        height: "420px",
+        marginTop:"50px"
+      }
    
     },
     photoBg:{
@@ -83,6 +89,15 @@ export const useStyles = makeStyles((theme)=>({
       height: "320px",
       top: 0,
       left: 0
+
+      ,
+      
+      [theme.breakpoints.up('lg')]:{
+        width: "420px",
+        height: "420px",
+        marginTop:"50px"
+      }
+
     },
     heroText: {
         position: 'absolute',
