@@ -36,6 +36,8 @@ function Footer() {
 
     <Typography>johnchristian1899@gmail.com</Typography>
     <Typography>&copy; 2020 John Christian Casas</Typography>
+    <h5>Design and Developed by: John Kenneth Razalan</h5>
+    
   </div>
   );
 }
