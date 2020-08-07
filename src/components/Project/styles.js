@@ -15,7 +15,7 @@ export const useStyles = makeStyles((theme)=>({
             },
    
     gridc:{
-        
+        textAlign: "center",
         margin: "auto",
         width:"35%",
     },
@@ -29,6 +29,10 @@ export const useStyles = makeStyles((theme)=>({
     h3:{
         textAlign: "center",
            fontWeight: "bold",
+           fontFamily: "'Montserrat', sans-serif",
+    },
+    video:{
+        fontWeight: "bold",
            fontFamily: "'Montserrat', sans-serif",
     }
     // ,description:{

@@ -46,7 +46,8 @@ function Project() {
       
 
 
-      <h3 className={classes.h3}>{li.title}</h3>
+      <h3  className={classes.h3}>{li.title}</h3>
+      <a href={li.link} className={classes.video}>{li.video}</a>
       {/* <CardContent>
           <Typography
             className={classes.description}
