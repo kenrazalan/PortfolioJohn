@@ -71,9 +71,9 @@ export const useStyles = makeStyles((theme) => ({
       fontWeight: "900",
       fontSize: 20,
       textTransform: "lowercase",
-      margin: "auto 15px",
+      margin: "auto 25px",
       [theme.breakpoints.down('md')]:{
-        margin:'auto 5px'
+        margin:'auto 15px'
       },
 
       [theme.breakpoints.up('md')]:{

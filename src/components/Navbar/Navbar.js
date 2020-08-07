@@ -37,11 +37,11 @@ import {useStyles} from './styles';
       icon: <HomeIcon />,
       text: 'home'
     },
-    {
-      path: '/about',
-      icon: <HelpIcon />,
-      text: 'About'
-    },
+    //{
+     // path: '/about',
+     // icon: <HelpIcon />,
+     // text: 'About'
+    //},
     {
       path: '/projects',
       icon: <WorkIcon />,

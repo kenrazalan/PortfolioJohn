@@ -22,6 +22,7 @@ function Project() {
   const classes = useStyles();
   
   const data = useContext(ThemeContext);
+  console.log(data)
   const image = data.map(i=>(
     i.image
   ))

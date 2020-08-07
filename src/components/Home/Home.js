@@ -48,7 +48,7 @@ function Home() {
             I Edit Photos & design Logo using Photoshop based on your demand.
         </h3>
         <Link className={classes.link} to="/contact">
-        <PortfolioButton>Contact Me</PortfolioButton>
+        {/* <PortfolioButton>Contact Me</PortfolioButton> */}
         </Link>
           </Grid>
 
@@ -67,9 +67,9 @@ function Home() {
         Hello I am John Christian Casas. I am graduated from Batangas State University.
         I Edit Photo and Design Logo using Photoshop based on what you needs. I am detail oriented person who pays attention to every small details a can make a conscious effort in every task.  
         </Typography>
-        <Link to="/about" className={classes.link} >
-          <PortfolioButton>Read More</PortfolioButton>
-        </Link>
+        {/* <Link to="/about" className={classes.link} >
+          <PortfolioButton>Read More</PortfolioButton> 
+        </Link> */}
       </Container>
       {/* <Container className={classes.container }>
       <Typography className={classes.h3}variant="h3">My Works</Typography>
