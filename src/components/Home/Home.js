@@ -65,7 +65,7 @@ function Home() {
         <Typography className={classes.h3} variant="h3">About Me</Typography>
         <Typography className={classes.paragraph} paragraph>
         Hello I am John Christian Casas. I am graduated from Batangas State University.
-        I Edit Photo and Design Logo using Photoshop based on what you needs. I am detail oriented person who pays attention to every small details a can make a conscious effort in every task.  
+        I Edit Photo and Design Logo using Photoshop based on what you needs. I am detail oriented person who pays attention to every small details and can make a conscious effort in every task.  
         </Typography>
         {/* <Link to="/about" className={classes.link} >
           <PortfolioButton>Read More</PortfolioButton> 
