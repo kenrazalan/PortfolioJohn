@@ -9,6 +9,12 @@ export const useStyles = makeStyles((theme) => ({
       height: 70,
       [theme.breakpoints.up('md')]: {
         height: 100,
+      },
+      [theme.breakpoints.up('lg')]: {
+        height: 100,
+      },
+      [theme.breakpoints.up('xl')]: {
+        height: 120,
       }
 
     },

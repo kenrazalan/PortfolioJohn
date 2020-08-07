@@ -76,8 +76,14 @@ export const useStyles = makeStyles((theme)=>({
       },
       
       [theme.breakpoints.up('lg')]:{
-        width: "420px",
+        width: "450px",
         height: "420px",
+        marginTop:"50px"
+      },
+      
+      [theme.breakpoints.up('xl')]:{
+        width: "500px",
+        height: "450px",
         marginTop:"50px"
       }
    
@@ -89,12 +95,17 @@ export const useStyles = makeStyles((theme)=>({
       height: "320px",
       top: 0,
       left: 0
-
       ,
       
       [theme.breakpoints.up('lg')]:{
-        width: "420px",
+        width: "450px",
         height: "420px",
+        marginTop:"50px"
+      },
+      
+      [theme.breakpoints.up('xl')]:{
+        width: "500px",
+        height: "450px",
         marginTop:"50px"
       }
 
