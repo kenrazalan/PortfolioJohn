@@ -23,7 +23,7 @@ export const Router = () => {
             />
           )}
         />
-        <Route path="/about" component={About} />
+        {/* <Route path="/about" component={About} /> */}
         <Route path="/projects" component={Project} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />

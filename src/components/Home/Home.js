@@ -10,7 +10,7 @@ import {ThemeContext} from '../../context/DataProvider';
 import { useStyles } from './style'
 import { Grid } from '@material-ui/core';
 import pic from '../img/pic.jpg';
-import SimpleImageSlider from "react-simple-image-slider";
+
 
 
 function Home() {
@@ -60,8 +60,8 @@ function Home() {
          </Grid>
 
       </Grid>
-     
-      <Container className={classes.container}>
+      
+      <Container id="about" className={classes.container}>
         <Typography className={classes.h3} variant="h3">About Me</Typography>
         <Typography className={classes.paragraph} paragraph>
         Hello I am John Christian Casas. I am graduated from Batangas State University.
@@ -71,35 +71,18 @@ function Home() {
           <PortfolioButton>Read More</PortfolioButton>
         </Link>
       </Container>
-      <Container className={classes.container }>
+      {/* <Container className={classes.container }>
       <Typography className={classes.h3}variant="h3">My Works</Typography>
             <Carousel >
               
               {img}
-                {/* <div>
-                    <img src={house} />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src={house} />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src={house} />
-                    <p className="legend">Legend 3</p>
-                </div> */}
+            
             </Carousel>
               
-            {/* <SimpleImageSlider
-                    
-                    width={896}
-                    height={504}
-                    images={newImg}
-                /> */}
             <Link className={classes.link} to="/projects">
             <PortfolioButton>View Works</PortfolioButton>
             </Link>
-    </Container>
+    </Container> */}
       <Container className={classes.container}>
         <Typography className={classes.h3} variant="h3">Contact</Typography>
         <Typography className={classes.paragraph} paragraph>
