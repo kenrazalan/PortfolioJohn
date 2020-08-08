@@ -39,7 +39,8 @@ export const useStyles = makeStyles((theme) => ({
   
     },
     link: {
-      textDecoration: 'none'
+      textDecoration: 'none',
+      color: "black"
     },
     drawer: {
       width: 'auto'

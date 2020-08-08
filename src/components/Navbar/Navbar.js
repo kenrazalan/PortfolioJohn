@@ -35,7 +35,7 @@ import {useStyles} from './styles';
     {
       path: '/',
       icon: <HomeIcon />,
-      text: 'home'
+      text: 'Home'
     },
     //{
      // path: '/about',
