@@ -1,25 +1,24 @@
 import {makeStyles} from '@material-ui/core/styles';
-
+import wood from '../img/wood.jpg';
 
 export const useStyles = makeStyles((theme)=>({
     imageContainer:{
       
         
-        // textAlign:"center",
-        // background:"#E5E5E5",
+       
         background: "rgb(238,174,202)",
         background: "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",
         minHeight:"100vh",
-        // height: "100vh",
+      
         color:"Black",
-        //  background:`#F5A05C url("${vector}")`,
+        
          margin: "auto",
-        //  backgroundRepeat:"no-repeat",
-        //  backgroundPosition: "100% 100%",
-        //  backgroundSize: "cover",
+           background:` url("${wood}")`,
+          backgroundRepeat:"no-repeat",
+        
+          backgroundSize: "cover",
          maxWidth: "100%",
-        //  display: "flex",
-        //  alignItems: "center",
+       //  backgroundPosition: "100% 100%",
          
 
 
@@ -70,10 +69,12 @@ export const useStyles = makeStyles((theme)=>({
       width: "320px",
       height: "320px",
       zIndex: 1,
+      boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
       '&:hover': {
         
         transform: "rotate(-6deg)"
-      },
+      }
+      ,
       
       [theme.breakpoints.up('lg')]:{
         width: "450px",
@@ -96,6 +97,8 @@ export const useStyles = makeStyles((theme)=>({
       top: 0,
       left: 0
       ,
+ 
+boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
       
       [theme.breakpoints.up('lg')]:{
         width: "450px",
@@ -151,10 +154,14 @@ export const useStyles = makeStyles((theme)=>({
       },
       name:{
         fontFamily: "'Montserrat', sans-serif",
-        fontWeight: 900
+        fontWeight: 900,
+        textShadow: "2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15)",
+
+
       },
       describe:{
         fontFamily:"'Poppins', sans-serif",
+       
       
       },
       heroImage:{

@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme)=>({
     //     height:"80vh",
     //     margin: "auto"
     // },
-   
+    
     media:{
         minHeight:"80%",
         margin: "auto",
@@ -18,11 +18,12 @@ export const useStyles = makeStyles((theme)=>({
         textAlign: "center",
         margin: "auto",
         width:"35%",
+        
     },
     title:{
         textAlign: "center",
         fontFamily: "'Montserrat', sans-serif",
-      fontWeight: "600",
+      fontWeight: 600,
       margin:"40px 0",
       marginBottom: 20
     },
@@ -34,6 +35,7 @@ export const useStyles = makeStyles((theme)=>({
     video:{
         fontWeight: "bold",
            fontFamily: "'Montserrat', sans-serif",
+           
     }
     // ,description:{
     //     textAlign: "center",

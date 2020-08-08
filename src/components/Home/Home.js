@@ -45,7 +45,7 @@ function Home() {
          <Grid item xs={12} sm={6} className={classes.heroContent}>
         <h1 className={classes.name}>Hi, I'm John Christian</h1>
         <h3 className={classes.describe}>
-            I Edit Photos & design Logo using Photoshop based on your demand.
+            I Edit Photos & Design Logo using Photoshop based on your demand.
         </h3>
         <Link className={classes.link} to="/contact">
         {/* <PortfolioButton>Contact Me</PortfolioButton> */}
